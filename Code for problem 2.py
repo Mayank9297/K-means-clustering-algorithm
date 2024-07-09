@@ -5,8 +5,7 @@ import matplotlib.pyplot as plt
 
 
 data = pd.read_csv('Mall_Customers.csv')
-purchase_data = data[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']]  # Replace with your features
-
+purchase_data = data[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']]  
 scaler = StandardScaler()
 scaled_data = scaler.fit_transform(purchase_data)
 
